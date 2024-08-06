@@ -24,7 +24,7 @@ class User:
     # Definimos el constructor
     def __init__(self, name, user_id):
         self.name = name
-        self.user_id = user_id  # Aquí se asigna user_id a self.user_id
+        self.user_id = user_id
         self.borrowed_books = []
 
     # Definimos la función para pedir prestado un libro
