@@ -20,9 +20,13 @@ print(precios)
 
 #Declaro una función en la cual recibio item, que es el nombre de mi diccionario
 def agregar_impuestos(item):
-    item["impuestos"] = item["precio"] * .19
+    new_item = item.copy()
+    new_item["impuestos"] = new_item["precio"] * .19
     #regreso el item con el elemento nuevo de impuestos
-    return item
+    return new_item
 
 new_items = list(map(agregar_impuestos, items))
+print("Nueva lista")
 print(new_items)
+print("Lista vieja")
+print(items)
