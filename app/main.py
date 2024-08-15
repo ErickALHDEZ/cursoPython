@@ -1,8 +1,5 @@
 import utils
 
-keys, values = utils.get_population()
-print(keys, values)
-
 data = [
     {
         "Country" : "Colombia",
@@ -14,7 +11,16 @@ data = [
     }
 ]
 
-country = input("Type Country => ")
+def run():
 
-result = utils.population_by_country(data, "Colombia")
-print(result)
+    keys, values = utils.get_population()
+    print(keys, values)
+
+    country = input("Type Country => ")
+
+    result = utils.population_by_country(data, "Colombia")
+    print(result)
+
+if __name__ == "__main__":
+
+    run()
